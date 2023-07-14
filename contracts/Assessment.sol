@@ -6,6 +6,7 @@ pragma solidity ^0.8.9;
 contract Assessment {
     address payable public owner;
     uint256 public balance;
+    int public counter;
 
     event Deposit(uint256 amount);
     event Withdraw(uint256 amount);
@@ -15,7 +16,7 @@ contract Assessment {
         balance = initBalance;
     }
 
-    function getBalance() public view returns(uint256){
+    function getBalance() public view returns (uint256) {
         return balance;
     }
 
@@ -56,5 +57,17 @@ contract Assessment {
 
         // emit the event
         emit Withdraw(_withdrawAmount);
+    }
+
+    function IncrementCounter(int value) public {
+        counter += value;
+    }
+
+    function DecrementCounter(int value) public {
+        counter -= value;
+    }
+
+    function getCounter() public view returns (int) {
+        return counter;
     }
 }
