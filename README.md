@@ -1,12 +1,33 @@
-# Starter Next/Hardhat Project
+## Project 
+Module 2 of Eth-Avax course by metacrafters
 
-After cloning the github, you will want to do the following to get the code running on your computer.
+## Description
+Adding functionalities in assessment.sol and interact with smart contract using the frontend.
 
-1. Inside the project directory, in the terminal type: npm i
-2. Open two additional terminals in your VS code
-3. In the second terminal type: npx hardhat node
-4. In the third terminal, type: npx hardhat run --network localhost scripts/deploy.js
-5. Back in the first terminal, type npm run dev to launch the front-end.
+## Frontend UI
+if metamask or any other crypto wallet is not installed:
+![image](https://github.com/Alok-Raturi/SCM-Starter/assets/110283609/6d5412fe-e053-44d2-a125-6e8f994e0340)
 
-After this, the project will be running on your localhost. 
-Typically at http://localhost:3000/
+Otherwise
+![image](https://github.com/Alok-Raturi/SCM-Starter/assets/110283609/099d31d2-331d-4e11-ac06-39f48e449269)
+
+![image](https://github.com/Alok-Raturi/SCM-Starter/assets/110283609/e7cb0b3e-35fe-4a38-946f-05609d0ce676)
+
+## Execution:
+      * First fork the project and clone it.
+      * In hardhat, first use the sepolia testnet.
+      * In hardhat.config.js, add the sepolia network and use alchemy as provider and also add the private key of your metamask account.
+      * After that, use npm i.
+      * use npx hardhat run scripts/deploy.js --network sepolia.
+      * Now copy the contract address in the contract address variable in ./pages/index.js
+      * Now run npm run dev.
+      * It will create a server on localhost:3000
+      * Now you can use any wallet to interact with any functionality except deposit and withdraw.
+      * To interact with deposit and withdraw, you must choose your account through which you have done deployment of contract.
+
+## Possibility of Error:
+    * Paste correct Alchemy URL .
+    * Use the account through which you have done deployment to interact with deposit and withdraw functions otherwise you will get call revert function error or unexpected gas        limit error.
+## Loom Video link:  https://www.loom.com/share/476a53b05d824c68a6379e5ee9231f80
+
+    
