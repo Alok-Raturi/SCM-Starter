@@ -28,6 +28,5 @@ Otherwise
 ## Possibility of Error:
     * Paste correct Alchemy URL .
     * Use the account through which you have done deployment to interact with deposit and withdraw functions otherwise you will get call revert function error or unexpected gas        limit error.
-## Loom Video link:  https://www.loom.com/share/476a53b05d824c68a6379e5ee9231f80
 
     
